@@ -1,0 +1,18 @@
+package com.dms;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ItemStatistics {
+	private Map<String, Integer> categoryCounts;
+
+    public ItemStatistics() {
+        categoryCounts = new HashMap<>();
+    }
+
+    public void addItem(String category) {
+        categoryCounts.put(category, categoryCounts.getOrDefault(category,));
+	
+
+    }
+}

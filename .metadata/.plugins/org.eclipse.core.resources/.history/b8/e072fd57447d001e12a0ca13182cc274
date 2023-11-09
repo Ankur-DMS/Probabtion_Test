@@ -1,0 +1,13 @@
+package com.dms;
+
+
+public class CategoryManager {
+
+	 private Connection connection;
+
+	    public CategoryManager(Connection connection) {
+	        this.connection = connection;
+	    }
+
+	
+}

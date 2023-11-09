@@ -1,0 +1,52 @@
+package com.dms;
+
+import java.util.Scanner;
+
+public class Connection {
+
+	String dbUrl = "jdbc:postgresql://localhost:5433/ManageItems";
+    String dbUsername = "postgres";
+    String dbPassword = "rtsAdmin" ;
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    while (true) {
+        System.out.println("1. Add a new category");
+        System.out.println("2. List all categories");
+        System.out.println("3. Add a new item and associate it with a category");
+        System.out.println("4. List all items in a specific category");
+        System.out.println("5. Calculate statistics");
+        System.out.println("6. Exit");
+        System.out.print("Enter your choice: ");
+
+        int choice = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        switch (choice) {
+        case 1:
+            // Call CategoryManager to add a new category
+            break;
+        case 2:
+            // Call CategoryManager to list all categories
+            break;
+        case 3:
+            // Call ItemManager to add a new item and associate it with a category
+            break;
+        case 4:
+            // Call ItemManager to list all items in a specific category
+            break;
+        case 5:
+            //  Calling Statistics to calculate and display statistics
+            break;
+        case 6:
+            System.out.println("Thank you have a Good Day");
+            System.exit(0);
+            break;
+        default:
+            System.out.println("Invalid choice. Please try again.");
+    }
+
+       
+
+}
+}
+    
+}
